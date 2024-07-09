@@ -67,6 +67,7 @@ Result:
 | B           | 74          |
 | C           | 36          |
 
+*[Back]*(#table-of-content)
 ---
 ## 2. How many days has each customer visited the restaurant?
 Group `join_table` by the `customer_id` column. Count the distinct number of `order_date` values for each customer and names this count `days_visit`.
