@@ -1,7 +1,9 @@
 # Solution
 ## Table of Content
 [Common Table Expression](#common-table-expression)
-[1. What is the total amount each customer spent at the restaurant?]
+
+[What is the total amount each customer spent at the restaurant?](#what-is-the-total-amount-each-customer-spent-at-the-restaurant?)
+
 How many days has each customer visited the restaurant?
 What was the first item from the menu purchased by each customer?
 What is the most purchased item on the menu and how many times was it purchased by all customers?
@@ -12,7 +14,7 @@ What is the total items and amount spent for each member before they became a me
 If each $1 spent equates to 10 points and sushi has a 2x points multiplier - how many points would each customer have?
 In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?
 ## Common Table Expression
-Used **LEFT JOIN** to merge `sales`, `menu` and `member` tables. Calculate calculates the difference between `order_date` and `join_date`, and names this calculated column `days_dif`.
+Used **LEFT JOIN** to merge `sales`, `menu` and `member` tables. Calculated the difference between `order_date` and `join_date`, and names this calculated column `days_dif`.
 ```c
 WITH join_table AS(
 SELECT
@@ -43,6 +45,6 @@ Result:
 | C           | 3          | 2021-01-01T00:00:00.000Z | ramen        | 12    |                          |          |
 | C           | 3          | 2021-01-01T00:00:00.000Z | ramen        | 12    |                          |          |
 | C           | 3          | 2021-01-07T00:00:00.000Z | ramen        | 12    |                          |          |
-
-
+---
+## What is the total amount each customer spent at the restaurant?
 
