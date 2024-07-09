@@ -1,5 +1,5 @@
 # Solution
-## Table of Content
+## :triangular_flag_on_post: Table of Content
 [Common Table Expression](#common-table-expression)
 
 [1. What is the total amount each customer spent at the restaurant?](#1-what-is-the-total-amount-each-customer-spent-at-the-restaurant)
@@ -48,6 +48,7 @@ Result:
 | C           | 3          | 2021-01-01T00:00:00.000Z | ramen        | 12    |                          |          |
 | C           | 3          | 2021-01-07T00:00:00.000Z | ramen        | 12    |                          |          |
 
+### :rewind: [*Back*](#table-of-content) 
 ---
 ## 1. What is the total amount each customer spent at the restaurant?
 Group `join_table` by the `customer_id` column. Calculate the sum of the `price` column for each customer and name this sum `total_spent`.
@@ -67,7 +68,7 @@ Result:
 | B           | 74          |
 | C           | 36          |
 
-### [*Back*](#table-of-content)
+### :rewind: [*Back*](#table-of-content) 
 ---
 ## 2. How many days has each customer visited the restaurant?
 Group `join_table` by the `customer_id` column. Count the distinct number of `order_date` values for each customer and names this count `days_visit`.
@@ -88,6 +89,7 @@ Result:
 | B           | 6          |
 | C           | 2          |
 
+### :rewind: [*Back*](#table-of-content) 
 ---
 ## 3. What was the first item from the menu purchased by each customer?
 Create a Subquery `first_time` to find the first (earliest) order date for each customer. 
@@ -119,4 +121,5 @@ Result:
 | C           | ramen        |
 | C           | ramen        |
 
+### :rewind: [*Back*](#table-of-content) 
 ---
