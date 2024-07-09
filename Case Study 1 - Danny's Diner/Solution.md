@@ -2,7 +2,7 @@
 ## Table of Content
 [Common Table Expression](#common-table-expression)
 
-[What is the total amount each customer spent at the restaurant?](#what-is-the-total-amount-each-customer-spent-at-the-restaurant)
+[1. What is the total amount each customer spent at the restaurant?](#1-What-is-the-total-amount-each-customer-spent-at-the-restaurant)
 
 How many days has each customer visited the restaurant?
 What was the first item from the menu purchased by each customer?
@@ -46,5 +46,5 @@ Result:
 | C           | 3          | 2021-01-01T00:00:00.000Z | ramen        | 12    |                          |          |
 | C           | 3          | 2021-01-07T00:00:00.000Z | ramen        | 12    |                          |          |
 ---
-## What is the total amount each customer spent at the restaurant?
+## 1. What is the total amount each customer spent at the restaurant?
 
