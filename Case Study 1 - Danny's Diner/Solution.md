@@ -319,7 +319,7 @@ Filter rows where the `order_date` month is January and `customer_id` is custome
 Evaluates each row based on conditions:
 - When days_dif >= 0 AND days_dif <= 7 then x2 point of all items.
 - x2 point if product_name is 'sushi'.
-- For all other cases, multiply price by 10.
+- For all other cases, multiply `price` by 10.
 ```c
 SELECT
 	customer_id,
