@@ -60,8 +60,8 @@ Result:
 Group `join_table` by the `customer_id` column. Calculate the sum of the `price` column for each customer and name this sum `total_spent`.
 ```c
 SELECT
- customer_id,
- SUM(price) AS total_spent
+	customer_id,
+	SUM(price) AS total_spent
 FROM join_table
 GROUP BY customer_id
 ORDER BY customer_id
