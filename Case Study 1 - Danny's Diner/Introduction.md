@@ -93,6 +93,7 @@ Recreate the following table output using the available data:
 |C|2021-01-07|ramen|12|N|
 
 #### :arrow_forward: [Solution](https://github.com/ducpham131/8-Week-SQL-Challenge/blob/main/Case%20Study%201%20-%20Danny's%20Diner/Bonus%20Question.md#join-all-the-things)
+---
 ### Rank All The Things
 Danny also requires further information about the `ranking` of customer products, but he purposely does not need the ranking for non-member purchases so he expects null `ranking` values for the records when customers are not yet part of the loyalty program.
 
