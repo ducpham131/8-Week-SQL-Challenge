@@ -8,7 +8,7 @@
 
 [3. What was the first item from the menu purchased by each customer?](#3-what-was-the-first-item-from-the-menu-purchased-by-each-customer)
 
-[4. What is the most purchased item on the menu and how many times was it purchased by all customers?](#4-what-is-the-most-purchased-item-on-the-menu-and-how-many-times-wa-it-purchased-by-all-customers)
+[4. What is the most purchased item on the menu and how many times was it purchased by all customers?](#4-what-is-the-most-purchased-item-on-the-menu-and-how-many-times-was-it-purchased-by-all-customers)
 
 [5. Which item was the most popular for each customer?](#5-which-item-was-the-most-popular-for-each-customer)
 
