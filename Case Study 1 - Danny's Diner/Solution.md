@@ -1,6 +1,6 @@
 # Solution
 ## Table of Content
-[Common Table Expression]
+[Common Table Expression](#common-table-expression)
 ## Common Table Expression
 Joined all table
 ```c
