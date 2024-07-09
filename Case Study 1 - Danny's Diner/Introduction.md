@@ -105,8 +105,6 @@ Danny also requires further information about the `ranking` of customer products
 |A|2021-01-11|ramen|12|Y|3|
 |A|2021-01-11|ramen|12|Y|3|
 |B|2021-01-01|curry|15|N|null|
-
-#### :arrow_forward: [Solution](https://github.com/ducpham131/8-Week-SQL-Challenge/blob/main/Case%20Study%201%20-%20Danny's%20Diner/Bonus%20Question.md#rank-all-the-things)
 |B|2021-01-02|curry|15|N|null|
 |B|2021-01-04|sushi|10|N|null|
 |B|2021-01-11|sushi|10|Y|1|
@@ -115,3 +113,5 @@ Danny also requires further information about the `ranking` of customer products
 |C|2021-01-01|ramen|12|N|null|
 |C|2021-01-01|ramen|12|N|null|
 |C|2021-01-07|ramen|12|N|null|
+
+#### :arrow_forward: [Solution](https://github.com/ducpham131/8-Week-SQL-Challenge/blob/main/Case%20Study%201%20-%20Danny's%20Diner/Bonus%20Question.md#rank-all-the-things)
