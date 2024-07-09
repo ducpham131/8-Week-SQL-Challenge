@@ -109,7 +109,7 @@ SELECT
 	product_name
 FROM join_table
 INNER JOIN (
-		SELECT
+	SELECT
 		customer_id,
 		MIN(order_date) AS first_order
 	FROM join_table
