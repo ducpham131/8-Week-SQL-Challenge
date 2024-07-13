@@ -1,4 +1,4 @@
-# Bonus Questions
+# ⭐ Bonus Questions 
 ## Join All The Things
 The following questions are related creating basic data tables that Danny and his team can use to quickly derive insights without needing to join the underlying tables using SQL.
 ```c
