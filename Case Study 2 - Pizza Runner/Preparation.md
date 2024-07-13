@@ -9,6 +9,7 @@
 - [`order_table`](#order_table)
 - [`prepare_order`](#prepare_order)
 - [`pizza_recipe`](#pizza_recipe)
+- [`delivered_order`](#delivered_order)
 ## Cleaning Data
 ### `runner_order`
 ```c
@@ -209,5 +210,29 @@ Result:
 | 2        | 9          |
 | 2        | 11         |
 | 2        | 12         |
+### :rewind: [*Back*](#triangular_flag_on_post-table-of-content) 
+---
+### delivered_order
+```c
+SELECT
+		order_id,
+		COUNT(pizza_id) AS ordered_quanity
+FROM order_table
+WHERE duration_minute IS NOT NULL
+GROUP BY order_id;
+```
+Result:
+
+| order_id | ordered_quanity |
+| -------- | --------------- |
+| 3        | 2               |
+| 5        | 1               |
+| 4        | 3               |
+| 10       | 2               |
+| 2        | 1               |
+| 7        | 1               |
+| 1        | 1               |
+| 8        | 1               |
+
 ### :rewind: [*Back*](#triangular_flag_on_post-table-of-content) 
 ---
