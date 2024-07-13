@@ -1,4 +1,4 @@
-# Case Study 1: Danny's Dinner
+# :ramen: Case Study 1: Danny's Dinner
 <img src="https://8weeksqlchallenge.com/images/case-study-designs/1.png" width="500">
 
 ## Introduction
