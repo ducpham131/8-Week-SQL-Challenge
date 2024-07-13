@@ -159,7 +159,7 @@ Result:
 ### :rewind: [*Back*](#triangular_flag_on_post-table-of-content) 
 ---
 ## 8. How many pizzas were delivered that had both exclusions and extras?
-``c
+```c
 SELECT
 	COUNT(pizza_id) AS exclusions_and_extras
 FROM order_table
