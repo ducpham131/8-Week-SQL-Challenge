@@ -1,4 +1,4 @@
-# Solution
+# :bulb: Solution
 ## :triangular_flag_on_post: Table of Content
 [Common Table Expression](#common-table-expression)
 
