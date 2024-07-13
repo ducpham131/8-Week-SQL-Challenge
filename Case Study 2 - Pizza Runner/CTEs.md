@@ -2,9 +2,9 @@
 ## :triangular_flag_on_post: Table of Content
 
 
-[`runner_order` table](#runner_order-table)
+[`runner_order`](#runner_order)
 
-## `runner_order` table
+## `runner_order`
 ```c
 SELECT
 	order_id,
