@@ -1,44 +1,44 @@
-# :bulb: Pizza Metrics
+# :bulb: CTEs
 ## :triangular_flag_on_post: Table of Content
-[Common Table Expression](#common-table-expression)
 
-[1. How many pizzas were ordered?](#1-how-many-pizzas-were-ordered)
 
-## Common Table Expression
-### runner_order table
+[`runner_order` table](#runner-_-order-table)
+
+## `runner_order` table
 ```c
 SELECT
 	order_id,
-  runner_id,
-    -- Replace blank and change datatype
-    ---pickup_time
-    CAST(
-     	CASE WHEN pickup_time IN ('','null')
-      			THEN NULL
-      		ELSE pickup_time  END
-      AS TIMESTAMP) AS pickup_time,
-    ---distance
+	runner_id,
+-- Replace blank and change datatype
+-- pickup_time
 	CAST(
-     	CASE WHEN distance IN ('','null')
-       			THEN NULL
-      		WHEN distance LIKE '%km%'
-       			THEN SUBSTRING(distance FROM 0 FOR POSITION('km' IN distance))
-            ELSE distance END
+     		CASE WHEN pickup_time IN ('','null')
+      				THEN NULL
+      			ELSE pickup_time  END
+      	AS TIMESTAMP) AS pickup_time,
+-- distance
+	CAST(
+     		CASE WHEN distance IN ('','null')
+       				THEN NULL
+      			WHEN distance LIKE '%km%'
+       				THEN SUBSTRING(distance FROM 0 FOR POSITION('km' IN distance))
+            	ELSE distance END
        	AS FLOAT) AS distance_km,
-    ---duration
+-- duration
 	CAST(
-      	CASE WHEN duration IN ('','null')
-      			THEN NULL
-      		WHEN duration LIKE '%min%'
-      			THEN SUBSTRING(duration FROM 0 FOR POSITION('min' IN duration))
-      		ELSE duration END
-      	AS FLOAT) AS duration_minute,
-    ---cancellation
+      		CASE WHEN duration IN ('','null')
+      				THEN NULL
+      			WHEN duration LIKE '%min%'
+      				THEN SUBSTRING(duration FROM 0 FOR POSITION('min' IN duration))
+      			ELSE duration END
+	AS FLOAT) AS duration_minute,
+-- cancellation
 	CASE WHEN cancellation IN ('','null')
-    		THEN NULL
-         ELSE cancellation END AS cancellation
+			THEN NULL
+         	ELSE cancellation END AS cancellation
 FROM pizza_runner.runner_orders
 ```
+Result:
 
 | order_id | runner_id | pickup_time              | distance_km | duration_minute | cancellation            |
 | -------- | --------- | ------------------------ | ----------- | --------------- | ----------------------- |
@@ -53,5 +53,3 @@ FROM pizza_runner.runner_orders
 | 9        | 2         |                          |             |                 | Customer Cancellation   |
 | 10       | 1         | 2020-01-11T18:50:20.000Z | 10          | 10              |                         |
 
-
-## 1. How many pizzas were ordered?
